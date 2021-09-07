@@ -76,4 +76,28 @@ class ListeTest
 
         assertEquals(node4, liste.removeFromHead());
     }
+
+    @Test
+    void removeFromTail()
+    {
+        assertEquals(null, liste.removeFromTail());
+
+//        Node node1 = new Node ("1");
+//
+//        liste.insertFromTail(node1);
+//        assertEquals(node1, liste.removeFromTail());
+
+        Node node = new Node("Christian");
+        Node node2 = new Node("Jonas");
+        Node node3 = new Node("Victor");
+        Node node4 = new Node("Jantie");
+
+        liste.insertFromTail(node);
+        liste.insertFromTail(node2);
+        liste.insertFromTail(node3);
+        liste.insertFromTail(node4);
+
+        assertEquals(node3, liste.removeFromTail());
+    }
+
 }

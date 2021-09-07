@@ -17,15 +17,15 @@ public class Main
 
     }
 
-    int [] ints = new int[10];
-
-    String s = new String("palle");
-
-    Integer [] integers = {1,2,33,4,5,56,7,4,53,6,7};
-
-    Set<Integer> integerSet = new HashSet<>(Arrays.asList(integers));
-    for (Integer integer ; integerSet)
-    {
-        System.out.println(integer);
-    }
+//    int [] ints = new int[10];
+//
+//    String s = new String("palle");
+//
+//    Integer [] integers = {1,2,33,4,5,56,7,4,53,6,7};
+//
+//    Set<Integer> integerSet = new HashSet<>(Arrays.asList(integers));
+//    for (Integer integer ; integerSet)
+//    {
+//        System.out.println(integer);
+//    }
 }

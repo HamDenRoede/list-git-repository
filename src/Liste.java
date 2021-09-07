@@ -98,4 +98,27 @@ public class Liste
 
         return head;
     }
+
+    public Node removeFromTail()
+    {
+        if (tail == null)
+        {
+            //i dette tilfælde er der 0 elementer i listen
+            return null;
+
+        }
+
+        if (head == tail)
+        {
+            //i dette tilfælde er der 1 element i listen
+            return tail;
+        }
+
+        //her fjernes head, dvs. sidste element i node listen
+        Node n = tail;
+        tail.previous.next = null;
+        tail =  tail.previous;
+
+        return tail;
+    }
 }
